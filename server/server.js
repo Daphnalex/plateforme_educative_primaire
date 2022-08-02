@@ -23,10 +23,10 @@ db.mongoose
         useUnifiedTopology: true
     })
     .then(() => {
-        console.log("Connected to the database")
+        //console.log("Connected to the database")
     })
     .catch(err => {
-        console.log("Cannot connect to the database", err);
+        //console.log("Cannot connect to the database", err);
         process.exit();
     });
 
@@ -35,6 +35,6 @@ require('./app/routes/tutorial.routes')(app);
 //set port, listen for request
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}.`);
+    //console.log(`Server is running on port ${PORT}.`);
 });
 
